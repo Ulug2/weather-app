@@ -12,3 +12,13 @@ This is a simple weather app built for the Software Engineer Intern AI/ML Tech A
 2. Navigate to the project directory.
 3. Install dependencies (npm install)
 4. Start the server (node server.js)
+5.	Open index.html in your browser for the frontend or access it via http://localhost:3000.
+
+## Dependencies 
+	•	Node.js
+	•	Express.js
+	•	Axios
+	•	Weather API
+
+## Demo video
+https://drive.google.com/file/d/1ybqirOZzmfge9BxZkKgBHFHU9upoS9N_/view?usp=sharing
