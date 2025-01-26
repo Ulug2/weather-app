@@ -5,7 +5,7 @@ async function getWeather() {
         return;
     }
     try {
-        const response = await fetch('https://weather-app-alpha-snowy.vercel.app/weather', {  
+        const response = await fetch('https://weather-app-alpha-snowy.vercel.app', {  
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ location }),
