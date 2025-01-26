@@ -2,51 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background: #f0f8ff;
-        }
-        input {
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 10px;
-            width: 60%;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        #weather-result {
-            margin-top: 20px;
-            padding: 20px;
-            background: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            text-align: left;
-        }
-        .weather-data {
-            margin: 5px 0;
-        }
-    </style>
 </head>
 <body>
-    <h1>Weather App</h1>
-    <p>Enter a location to see the current weather:</p>
-    <input type="text" id="location" placeholder="Enter city, zip code, etc." />
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weather-result" style="display: none;">
-        <h2 id="city"></h2>
-        <div class="weather-data"><strong>Temperature:</strong> <span id="temperature"></span></div>
-        <div class="weather-data"><strong>Condition:</strong> <span id="condition"></span></div>
-        <div class="weather-data"><strong>Humidity:</strong> <span id="humidity"></span></div>
-        <div class="weather-data"><strong>Wind Speed:</strong> <span id="wind-speed"></span></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+        <h1>Weather App</h1>
+        <input type="text" id="location" placeholder="Enter location">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="result"></div>
+        
+        <div id="info-section">
+            <h3>Ulykbek Khairulla</h3>
+            <button id="info-button" onclick="showInfo()">Info</button>
+        </div>
+        <script src="script.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            #result {
+                margin-top: 20px;
+            }
+            #info-section {   
+                bottom: 10px;
+                right: 10px;
+            }
+            #info-button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            #info-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </body>
+</body>   
 </html>
