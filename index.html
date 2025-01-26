@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+</head>
+<body>
+    <body>
+        <h1>Weather App</h1>
+        
+        <input type="text" id="location" placeholder="Enter location">
+        <button onclick="getWeather()">Get Weather</button>
+        <div id="result"></div>
+        
+        <div id="info-section">
+            <h3>Ulykbek Khairulla</h3>
+            <button id="info-button" onclick="showInfo()">Info</button>
+        </div>
+
+        <script src="script.js"></script>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            #result {
+                margin-top: 20px;
+            }
+            #info-section {   
+                bottom: 10px;
+                right: 10px;
+            }
+
+            #info-button {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #info-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </body>
+</body>   
+</html>
