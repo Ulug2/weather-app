@@ -7,7 +7,7 @@ async function getWeather() {
     });
 
     const data = await response.json();
-    document.getElementById('result').innerText = JSON.stringify(data, null, 2);
+    displayWeather(data); // Display the weather data
 }
 async function displayWeather(data) {
     const resultDiv = document.getElementById('result');
