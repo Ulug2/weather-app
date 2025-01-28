@@ -17,7 +17,7 @@ async function displayWeather(data) {
     else {
         resultDiv.innerHTML = `
             <h3>Weather in ${data.name}</h3>
-            <p>Temperature: ${data.main.temp - 273}°C</p>
+            <p>Temperature: ${Math.round(data.main.temp - 273)}°C</p>
             <p>Description: ${data.weather[0].description}</p>
         `;
     }
